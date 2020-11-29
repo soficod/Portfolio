@@ -1,0 +1,134 @@
+
+.section-title
+{
+    width:100vw;
+    height:100vh;
+}
+
+.section-title > div
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    height:200px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+    border-radius: 50px;
+    /*background-color: rgba(88, 88, 88, 0.4);*/
+}
+
+.section-title h1 
+{
+    color:white;
+    font-size: 6em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+.section-title h1 span 
+{
+    color:rgba(193, 71, 218, 0.89);
+}
+
+.section-title p 
+{
+    color:rgb(255, 255, 255);
+    font-size: 1.5em;
+}
+
+.section-title p span
+{
+    color:rgba(255, 255, 255, 0.842);
+    font-style: italic;
+
+}
+
+#skill-page button 
+{
+    padding:20px;
+    margin: 40px;
+    font-size:1.2em;
+    border-radius: 20px;
+    background-color:rgba(107, 170, 107, 0);
+    border:dotted gray 3px;
+    color: white;
+    cursor:pointer;
+    transition : border 0.01s ease;
+}
+
+#skill-page button:hover
+{
+    border: solid rgba(193, 71, 218, 0.89) 3px;   
+}
+
+.fade
+{
+    display:none;
+}
+
+#skill-section
+{  
+    width: 100vw;
+    background-color: rgba(56, 34, 45, 0.842);
+    min-height: 100vh;
+}
+
+.s-section
+{
+    width:100%;
+    margin:auto;
+    overflow-x: auto;
+    padding-bottom: 40px;
+}
+
+.skill
+{
+    font-size:8em;
+    margin:40px;
+    color: white;
+    transition : font-size 0.2s ease;
+
+}
+
+.skillholder:hover .skill
+{
+    font-size: 5em;
+    
+}
+
+.skill-scroll
+{
+    width:70%;
+    margin: auto;
+    flex-wrap: wrap;
+    display:flex;
+    justify-content:space-between;
+}
+
+.desc
+{
+    padding-top:80px;
+    padding-bottom: 50px;
+    text-align:center;
+    font-size: 2em;
+    width:60%;
+    margin:auto;
+    border-bottom: solid  rgba(168, 62, 180, 0.473) 3px;
+    color:rgb(163, 159, 159);
+}
+
+.skillholder
+{
+
+    text-align: center;
+    
+    
+}
+.skill-name
+{
+    font-size: 1.5em;
+    color:white;
+}

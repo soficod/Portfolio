@@ -1,0 +1,68 @@
+.page-loader
+{
+    width:100vw;
+    height:100vh;
+    background-color: #222;
+    position: fixed;
+    z-index:200;
+    top: 0;
+}
+
+.page-loader-content
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.page-loader svg 
+{
+    width: 400px;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+}
+
+@keyframes draw 
+{
+    0% { stroke: #2980b9; }
+    100% { stroke-dashoffset: 300; }
+}
+
+@keyframes letterflash 
+{
+    0% { fill: #2980b9; }
+    100% { fill: #8e44ad; }
+}
+
+@keyframes spinnerflash 
+{
+    0% { stroke: #2980b9; }
+    100% { stroke: #8e44ad; }
+}
+
+.page-loader .circle 
+{
+    stroke-dasharray: 150;
+    animation: draw 2s linear infinite;
+}
+
+.page-loader .one, 
+.page-loader .two, 
+.page-loader .three, 
+.page-loader .four,
+.page-loader .five,
+.page-loader .six 
+{
+    animation: letterflash 2s ease-in-out infinite;
+}
+  
+.page-loader .six   { animation-delay: 0.5s; }
+.page-loader .five  { animation-delay: 0.4s; }
+.page-loader .four  { animation-delay: 0.3s; }
+.page-loader .three { animation-delay: 0.2s; }
+.page-loader .two   { animation-delay: 0.1s; }
+.page-loader .one   { animation-delay: 0s; }

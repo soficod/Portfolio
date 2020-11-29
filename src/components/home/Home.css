@@ -1,0 +1,42 @@
+
+.intro
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:white;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.intro h1
+{
+    font-size:3.5em;
+}
+
+.intro h1 span 
+{
+    color:rgba(255, 60, 239, 0.89);
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+
+
+.intro p 
+{
+    font-size:1.5em;
+    color:rgba(211, 210, 210, 0.849);
+}
+
+@media only screen and (max-width: 1024px)
+{
+    .intro 
+    {
+        position: relative;
+        top: 300px;
+        width: 95%;
+    }
+}

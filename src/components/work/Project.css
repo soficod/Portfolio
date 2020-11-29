@@ -1,0 +1,35 @@
+
+.project
+{
+    width:60%;
+    margin:auto;
+
+}
+
+.project img
+{
+    width:100%;
+    height:500px;
+}
+
+.projectName
+{
+    color:white;
+    font-size:2.5em;
+}
+
+.project-description
+{
+    color:white;
+    font-size:1.4em;
+}
+.button-container button
+{
+    font-size:1.3em;
+    padding:5px;
+    margin-top:20px;
+}
+.button-container
+{
+    margin-bottom:80px;
+}
