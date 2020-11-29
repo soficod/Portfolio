@@ -75,7 +75,7 @@ const Work = ({loading}) =>{
             animateText();
         }
 
-    },[loading])
+    },[loading, interv])
 
     let project = [
         {

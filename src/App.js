@@ -9,10 +9,10 @@ const App = ()=>{
   
   const [loading,setLoading] = useState(false);
   useEffect(()=>{
-    /*setLoading(true);
+    setLoading(true);
     setTimeout(()=>{
       setLoading(false);
-    },3000)*/
+    },3000)
   },[])
 
   return(

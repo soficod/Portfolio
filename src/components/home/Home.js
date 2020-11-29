@@ -104,7 +104,7 @@ const Home =({loading})=>{
         return ()=>{
             clearInterval(interv);
         }
-    },[loading])
+    },[loading, interv])
 
     return(
         <div className="intro">

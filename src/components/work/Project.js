@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './Project.css'
 
 const Project = (props)=>{
@@ -7,7 +6,7 @@ const Project = (props)=>{
     return(
         <>
             <div className="project">
-                <img src={props.img} /> 
+                <img src={props.img} alt="Project's image"/> 
                 <h1 className="projectName">{props.name}</h1>
                 <p className="project-description" >{props.description}</p>
                 <div className="button-container">

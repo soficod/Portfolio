@@ -116,7 +116,7 @@ const Skills = ({loading, setLoading})=>{
         return ()=>{
             clearInterval(interv);
         }
-    },[loading])
+    },[loading, interv])
 
     return(
         <>
