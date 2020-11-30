@@ -109,6 +109,7 @@ const Skills = ({loading, setLoading})=>{
     }
 
     useEffect(()=>{
+        document.title="My skills";
         if(!loading)
         {
             animateText();
@@ -116,7 +117,7 @@ const Skills = ({loading, setLoading})=>{
         return ()=>{
             clearInterval(interv);
         }
-    },[loading, interv])
+    },[])
 
     return(
         <>
@@ -140,7 +141,14 @@ const Skills = ({loading, setLoading})=>{
                         >
                             Check out my skills
                         </button>
-                        <button className="fade">Download my resume</button>
+                        <a 
+                            className="fade" 
+                            target="_blank" 
+                            href="https://drive.google.com/file/d/1ib2Nqtp-L0MbJwQSRIwcYcOZXhmRNSko/view?usp=sharing"
+                            rel="noopener noreferrer"
+                        >
+                            <button>Download my resume</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -159,8 +167,10 @@ const Skills = ({loading, setLoading})=>{
                         {
                             return(
                                 <div className="skillholder">
-                                    <div className={element.icon +" skill"} >
-                                    
+                                    <div className="icon-skill">
+                                        <div className={element.icon +" skill"} >
+                                        
+                                        </div>
                                     </div>
                                     <span  className="skill-name">{element.skillName}</span>
                                 </div>

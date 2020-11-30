@@ -1,8 +1,13 @@
 import React, { useEffect } from 'react'
 import fade from "../../libs/fade"
 import './Work.css'
-import prj1 from './project-images/react.png'
 import Project from './Project'
+import scrollTo from "../../libs/scrollTo"
+
+/* Projects images */
+import portfolio from './project-images/portfolio.png';
+import pfe from './project-images/pfe.png';
+
 const Work = ({loading}) =>{
 
     let interv;
@@ -70,46 +75,37 @@ const Work = ({loading}) =>{
     }
 
     useEffect(()=>{
+        document.title="My work";
         if(!loading)
         {
             animateText();
         }
 
-    },[loading, interv])
+    },[])
 
     let project = [
         {
-            img: prj1,
-            name: "React Web",
-            description:"i created this website with the best person in this world.",
+            img: portfolio,
+            name: "My personal website",
+            description:"An beautiful animated website built using ReactJs. Showcasing my work, skills and personal informations.",
             link: true,
-            pLink: "http://www.google.com",
-            git: true,
+            pLink: "#",
+            git: false,
             gLink: "http://www.github.com"
         },
         {
-            img: prj1,
-            name: "React Web",
-            description:"i created this website with the best person in this world.",
+            img: pfe,
+            name: "Arabic and French news classifier",
+            description:"A website that classifies Arabic and French news article using a Machine Learning model (SVM).",
             link: false,
-            pLink: "http://www.google.com",
-            git: true,
-            gLink: "http://www.github.com"
-        },
-        {
-            img: prj1,
-            name: "React Web",
-            description:"i created this website with the best person in this world.",
-            link: true,
             pLink: "http://www.google.com",
             git: false,
             gLink: "http://www.github.com"
         }
-
     ]
     return(
         <>
-            <div className = "section-title" id="work-page" >
+            <div className="section-title" id="work-page" >
                 <div>
                     <h1><span></span></h1>
                     <br />
@@ -128,6 +124,7 @@ const Work = ({loading}) =>{
                     }}>
                         <button 
                             className="fade"
+                            onClick={()=>{scrollTo(document.getElementById("mywork"))}}
                         >
                             Check out my work
                         </button>
@@ -135,7 +132,7 @@ const Work = ({loading}) =>{
                     </div>
                 </div>
             </div>
-            <div className="mywork">
+            <div className="mywork" id="mywork">
                 {
                     project.map((elem)=>{
                         return(

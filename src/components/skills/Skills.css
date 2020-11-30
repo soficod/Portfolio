@@ -90,13 +90,11 @@
     margin:40px;
     color: white;
     transition : font-size 0.2s ease;
-
 }
 
 .skillholder:hover .skill
 {
     font-size: 5em;
-    
 }
 
 .skill-scroll
@@ -105,7 +103,7 @@
     margin: auto;
     flex-wrap: wrap;
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
 }
 
 .desc
@@ -120,15 +118,42 @@
     color:rgb(163, 159, 159);
 }
 
+.icon-skill 
+{
+    width: 100%;
+    text-align: center;   
+}
+
 .skillholder
 {
-
+    width: 200px;
     text-align: center;
-    
-    
 }
+
 .skill-name
 {
     font-size: 1.5em;
     color:white;
+}
+
+@media only screen and (max-width: 1024px)
+{
+    #skill-page button 
+    {
+        padding: 10px;
+        margin: 10px;
+        font-size: 1em;
+    }
+
+    .desc
+    {
+        padding-top:80px;
+        padding-bottom: 50px;
+        text-align:center;
+        font-size: 2em;
+        width:95%;
+        margin:auto;
+        border-bottom: solid  rgba(168, 62, 180, 0.473) 3px;
+        color:rgb(163, 159, 159);
+    }
 }

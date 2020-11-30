@@ -97,6 +97,7 @@ const Home =({loading})=>{
     }
 
     useEffect(()=>{
+        document.title="Sofia SARADOUNI";
         if(!loading)
         {
             animateText();
@@ -104,7 +105,7 @@ const Home =({loading})=>{
         return ()=>{
             clearInterval(interv);
         }
-    },[loading, interv])
+    },[])
 
     return(
         <div className="intro">

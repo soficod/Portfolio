@@ -36,13 +36,13 @@ const Navbar =()=>{
             ico: "fa fa-suitcase",
             name: "My work",
             cls: "mywork"
-        },
+        }/*,
         {
             to: "/contact",
             ico: "fa fa-envelope",
             name: "Contact me",
             cls: "contact"
-        },
+        },*/
     ]
 
     return(

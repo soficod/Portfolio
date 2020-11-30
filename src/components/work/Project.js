@@ -6,7 +6,7 @@ const Project = (props)=>{
     return(
         <>
             <div className="project">
-                <img src={props.img} alt="Project's image"/> 
+                <img src={props.img} alt="Project"/> 
                 <h1 className="projectName">{props.name}</h1>
                 <p className="project-description" >{props.description}</p>
                 <div className="button-container">
