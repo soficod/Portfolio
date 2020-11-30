@@ -9,15 +9,15 @@ const Skills = ({loading, setLoading})=>{
         
         {
             icon : "devicon-html5-plain ",
-            skillName : "Html5"
+            skillName : "HTML5"
         },
         {
             icon : "devicon-css3-plain ",
-            skillName : "Css3"
+            skillName : "CSS3"
         },
         {
             icon : "devicon-javascript-plain ",
-            skillName : "Javascript"
+            skillName : "JavaScript"
         },
         {
             icon : "devicon-c-plain ",
@@ -33,11 +33,11 @@ const Skills = ({loading, setLoading})=>{
         },
         {
             icon : "devicon-react-plain ",
-            skillName : "React"
+            skillName : "ReactJS"
         },
         {
             icon : "devicon-mysql-plain ",
-            skillName : "Mysql"
+            skillName : "MySQL"
         }
 
 
