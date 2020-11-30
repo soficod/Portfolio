@@ -89,7 +89,7 @@ const Work = ({loading}) =>{
             name: "My personal website",
             description:"An beautiful animated website built using ReactJs. Showcasing my work, skills and personal informations.",
             link: true,
-            pLink: "https://s-saradouni.netlify.app/mywork",
+            pLink: "https://s-saradouni.netlify.app",
             git: false,
             gLink: "http://www.github.com"
         },
